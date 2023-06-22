@@ -15,7 +15,7 @@ function App() {
     <>
     <BrowserRouter>
     <Routes>
-      <Route path='/' exact element={<Home />} />
+      <Route path='/Project-Degree' exact element={<Home />} />
       <Route path='/apply' exact element={<Apply />} />
       <Route path='/course' exact element={<Course />} />
       <Route path='/course/cprogramming' exact element={<Cprogramming />} />
