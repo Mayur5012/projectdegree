@@ -1,0 +1,254 @@
+html,
+body {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  overflow-x: hidden;
+}
+
+/*  ------------------- navbar ------------------------- */
+#Navbar{
+  position: fixed;
+  z-index: 1;
+}
+.n-wrapper {
+width: 100%;
+  padding: 2px 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  top: 0;
+  border: 1px solid #a2a2a2;
+  background-color: #ffff;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* -------------------menu--------- */
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+#check {
+  display: none;
+}
+
+.menu-button {
+  width: 28px;
+  height: 28px;
+  line-height: 8px;
+  transition: all 0.2s ease-in;
+  padding-bottom: 4px;
+  padding-top: 0;
+  padding-right: 4px;
+  padding-left: 20px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: left;
+  right: 0;
+  top: 0;
+  z-index: 201;
+}
+.menu-button span {
+  height: 3px;
+  width: 100%;
+  background: rgb(15, 15, 15);
+  display: inline-block;
+  transition: all 0.5s cubic-bezier(0.62, 0.43, 0.35, 1.47);
+}
+
+/* toggle icon animation */
+#check:checked ~ .menu-button span:nth-child(1) {
+  width: 100%;
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+#check:checked ~ .menu-button span:nth-child(2) {
+  width: 0;
+}
+
+#check:checked ~ .menu-button span:nth-child(3) {
+  width: 100%;
+  transform: rotate(-45deg) translateY(-7px) translateX(7px);
+}
+
+/* the nav-menu height is set to 0 when the nav-menubar is closed */
+
+.nav-menu {
+  z-index: 1;
+  border: 1px solid #a2a2a2;
+  background-color: #f4f4f4;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  width: 50%;
+  background: #f4f4f4;
+  height: 0;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: #0c1019;
+  display: block;
+  font-size: 18px;
+  transition: all 0.4s cubic-bezier(0.22, 0.43, 0.35, 1.5);
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: top;
+  text-align: center;
+  border-bottom: 1px solid #b4ac97;
+}
+
+/* the nav-menu height will be set to the height in pixels that would have for default, using height:auto won't work but you can put that value in pixels creating the slide*/
+#check:checked ~ .nav-menu {
+  width: 31%;
+  overflow-y: scroll;
+  left: calc(100% - 28rem);
+  top: 70px;
+  height: 200px;
+  /* width: 94%;
+  overflow-y: scroll;
+  left: 2rem;
+  top: 55px;
+  height: 200px; */
+}
+#check:checked ~ .nav-menu a {
+  padding: 10px;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* you can edit the direction where the slide starts, changing the height animation to width, but it will take some changes.
+for example:
+
+.nav-menu{
+  width: 0%;
+  background: #ffffff;
+  height: auto;
+  max-height 144px;
+  opacity: 0;
+}
+
+#check:checked ~ .nav-menu{
+  width: 100%;
+  opacity: 1;
+} 
+
+*/
+
+a {
+  text-decoration: none;
+  color: rgb(35, 35, 35);
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(45 ,248 ,197);
+  padding: 4px;
+  border-radius: 5px;
+}
+#menutoggle{
+  display: none;
+}
+.n-left {
+  margin-top: 5px;
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  gap: 2rem;
+}
+.n-left img {
+  margin-bottom: 8px;
+  width: 210px;
+  height: 50px;
+}
+.n-name {
+  margin-left: -22px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.n-right {
+  margin-right: -60px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+}
+.n-list-pc{
+  display: block  !important;
+}
+
+.n-list{
+  display: none !important;
+  flex: 10;
+}
+.n-list > ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-right: 4rem;
+}
+.n-list-pc > ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-right: 5rem;
+}
+
+.n-list,.n-list-pc > ul :hover {
+  color: rgb(45 ,248 ,197) ;
+  cursor: pointer;
+}
+
+.n-button {
+  flex: 2;
+}
+
+@media screen and (max-width:750px){
+  .n-right{
+    margin-right: -45px;
+  }
+  .n-list{
+    display: block !important;
+  }
+  .n-list-pc{
+    display: none  !important;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .n-list > ul {
+    gap: 1rem;
+    margin-right: 4rem;
+  }
+  .n-name {
+    font-size: 1.2rem;
+    /* transform: scale(.8); */
+  }
+  #check:checked ~ .nav-menu {
+    width: 82%;
+    left: calc(100% - 23rem);
+  }
+  .n-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}

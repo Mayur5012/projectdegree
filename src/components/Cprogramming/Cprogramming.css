@@ -1,0 +1,21 @@
+.c-programming{
+    margin-top: 8rem;
+}
+.coursera{
+    box-shadow: 0px 5px 10px #5f5f5f;
+    background-color: #eaeaea;
+    border-radius: 50px;
+    margin: 4rem;
+    display: flex;
+    flex-direction: row;
+}
+.detail-section{
+    margin: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+}
+.offeredby{
+    margin: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyberpunk Frosted Glass</title>
+</head>
+<style>
+    .container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-image {
+  background: url('../images/card1.jpg') center center fixed;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* Adjust the opacity as desired */
+  backdrop-filter: blur(10px); /* Adjust the blur amount as desired */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 50px; /* Adjust padding as needed */
+  font-size: 24px; /* Adjust font size as needed */
+  color: #fff; /* Set desired text color */
+}
+
+</style>
+<body>
+  <div class="container">
+    <div class="background-image"></div>
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Welcome to Cyberpunk World</h1>
+      <p>Experience the future with our futuristic technologies.</p>
+    </div>
+  </div>
+</body>
+
+</html>
