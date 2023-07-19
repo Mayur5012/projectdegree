@@ -4,7 +4,7 @@ import logo from "../../images/logo.png"
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = () => {
-  const home = "http://localhost:3000/";
+  const home = "https://mayur5012.github.io/Project-Degree/";
   // const navigate = useNavigate();
 
   return (
@@ -23,13 +23,13 @@ const Navbar = () => {
           <div className="n-right">
             <div className="n-list-pc">
               <ul style={{ listStyleType: "none" }}>
-              <Link to="/" smooth={true} spy={true}>
+              <Link to="/Project-Degree/" smooth={true} spy={true}>
                   <li>Home</li>
               </Link>
-                <Link to="/course" smooth={true} spy={true}>
+                <Link to="/Project-Degree/course" smooth={true} spy={true}>
                   <li>Courses</li>
                 </Link>
-                <Link to="/apply" smooth={true} spy={true}>
+                <Link to="/Project-Degree/apply" smooth={true} spy={true}>
                   <li>Apply</li>
                 </Link>
                 <li>AboutUs</li>

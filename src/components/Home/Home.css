@@ -9,7 +9,7 @@ a{color:#013437} */
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin: 8rem 2rem;
+    margin: 8rem 2rem 2rem 2rem;
   
   }
   #head2{

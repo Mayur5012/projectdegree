@@ -28,7 +28,7 @@ function Footer() {
             {/* <hr /> */}
             <div className="footer-col-2">
               <h3>Contact Us</h3>
-              <p>projectdegree@connect.com</p>
+              <p>project@degree.com</p>
               <p>123, ABC TOWN</p>
               <p>Mayapuri, Delhi</p>
               <p>India</p>
