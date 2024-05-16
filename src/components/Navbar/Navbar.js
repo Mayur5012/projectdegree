@@ -4,7 +4,6 @@ import logo from "../../images/logo.png"
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = () => {
-  const home = "";
   // const navigate = useNavigate();
 
   return (
@@ -12,24 +11,25 @@ const Navbar = () => {
       <nav>
         <div className="n-wrapper" id="Navbar">
           {/* left */}
-          <a href={home}>
+          
+          <Link to="/" smooth={true} spy={true}>
             <div className="n-left">
               <img src={logo} alt="ProjectDegree"></img>
               {/* <span className="n-name">Project Degree</span> */}
             </div>
-          </a>
+          </Link>
 
           {/* right */}
           <div className="n-right">
             <div className="n-list-pc">
               <ul style={{ listStyleType: "none" }}>
-              <Link to="/Project-Degree/" smooth={true} spy={true}>
+              <Link to="/" smooth={true} spy={true}>
                   <li>Home</li>
               </Link>
-                <Link to="/Project-Degree/course" smooth={true} spy={true}>
+                <Link to="/course" smooth={true} spy={true}>
                   <li>Courses</li>
                 </Link>
-                <Link to="/Project-Degree/apply" smooth={true} spy={true}>
+                <Link to="/apply" smooth={true} spy={true}>
                   <li>Apply</li>
                 </Link>
                 <li>AboutUs</li>

@@ -11,10 +11,10 @@ function App() {
     <>
     <BrowserRouter>
     <Routes>
-      <Route path='/Project-Degree/' exact element={<Home />} />
-      <Route path='/Project-Degree/apply' exact element={<Apply />} />
-      <Route path='/Project-Degree/course' exact element={<Course />} />
-      <Route path='/Project-Degree/course/cprogramming' exact element={<Cprogramming />} />
+      <Route path='/' exact element={<Home />} />
+      <Route path='/apply' exact element={<Apply />} />
+      <Route path='/course' exact element={<Course />} />
+      <Route path='/course/cprogramming' exact element={<Cprogramming />} />
     </Routes>
     </BrowserRouter>
     </>
