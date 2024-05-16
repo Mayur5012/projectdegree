@@ -4,7 +4,7 @@ import logo from "../../images/logo.png"
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = () => {
-  const home = "https://mayur5012.github.io/Project-Degree/";
+  const home = "";
   // const navigate = useNavigate();
 
   return (
